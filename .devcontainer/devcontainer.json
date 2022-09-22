@@ -1,0 +1,14 @@
+{
+    "name": "CucumberTemplate",
+    "image": "davidcozens/cucumber:3",
+    "context": "..",
+    "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+    "settings": {"terminal.integrated.shell.linux": "/bin/bash"},
+    "extensions": [
+		"rebornix.ruby",
+		"alexkrechik.cucumberautocomplete",
+		"AravindKumar.gherkin-indent",
+		"stevejpurves.cucumber"
+	],
+	"postStartCommand": "git config --global core.sshCommand /usr/bin/ssh"
+}
