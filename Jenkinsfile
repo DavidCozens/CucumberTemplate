@@ -14,7 +14,7 @@ pipeline {
   }
   post {
     always {
-      cucumber buildStatus: 'FAILURE', customCssFiles: '', customJsFiles: '', failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: 1, fileIncludePattern: '**/results.json', pendingStepsNumber: -1, reportTitle: 'Cucumber Template', skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
+      cucumber buildStatus: 'null', customCssFiles: '', customJsFiles: '', failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: 1, fileIncludePattern: '**/results.json', pendingStepsNumber: -1, reportTitle: 'Cucumber Template', skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
     }
     cleanup {
       cleanWs()
